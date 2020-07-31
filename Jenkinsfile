@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'docker run -dit --name doc_pip_jen ubuntu:latest'
+                sh 'docker build -t ubuntu:latest'
             }
         }
     }
